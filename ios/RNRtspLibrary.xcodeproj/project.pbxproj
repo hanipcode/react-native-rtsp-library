@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNRtspLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNRtspLibrary.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,8 +20,10 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNRtspLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNRtspLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNRtspLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNRtspLibrary.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNRtspLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNRtspLibrary.m; sourceTree = "<group>"; };
+		29E30B76215AB2A0003DF0B5 /* LiveViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveViewManager.m; sourceTree = "<group>"; };
+		29E30B77215AB2A0003DF0B5 /* LiveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveView.m; sourceTree = "<group>"; };
+		29E30B78215AB2A0003DF0B5 /* LiveViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveViewManager.h; sourceTree = "<group>"; };
+		29E30B79215AB2A0003DF0B5 /* LiveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,11 +45,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		29E30B75215AB2A0003DF0B5 /* LiveView */ = {
+			isa = PBXGroup;
+			children = (
+				29E30B76215AB2A0003DF0B5 /* LiveViewManager.m */,
+				29E30B77215AB2A0003DF0B5 /* LiveView.m */,
+				29E30B78215AB2A0003DF0B5 /* LiveViewManager.h */,
+				29E30B79215AB2A0003DF0B5 /* LiveView.h */,
+			);
+			path = LiveView;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNRtspLibrary.h */,
-				B3E7B5891CC2AC0600A0062D /* RNRtspLibrary.m */,
+				29E30B75215AB2A0003DF0B5 /* LiveView */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,7 +120,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNRtspLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +211,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
